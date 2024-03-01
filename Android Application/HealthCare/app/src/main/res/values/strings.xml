@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Health Care</string>
+    <string name="dis">I am a disease.Kill me please. If I touch me you will get contaminated. So you better leave me alone. I prefer being alone.</string>
+
+    <string name="des">\"Context-Aware Health Diseases Prediction\" refers to a technological approach that leverages contextual information to predict and assess the likelihood of various health diseases or conditions in individuals. This concept involves using data from multiple sources, such as medical records, wearable devices, environmental factors, lifestyle choices, and genetic information, to create a comprehensive understanding of a person\'s health status.
+
+By analyzing this diverse range of data points, context-aware health disease prediction aims to provide more accurate and personalized predictions about potential health risks and diseases that an individual might face. This approach goes beyond traditional medical diagnosis by considering the broader context in which a person\'s health exists.</string>
+</resources>

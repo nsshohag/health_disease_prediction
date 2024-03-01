@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Diabetes">
+
+    <LinearLayout
+
+
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Provide Your Information To Check Whether You Are in The Risk of Diabetes"
+            android:textAlignment="center"
+            android:textColor="#2a2a52"
+            android:textSize="16dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8e3e3"
+            android:orientation="vertical">
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="Age"
+                android:stepSize="1.0"
+                android:value="21"
+                android:valueFrom="0"
+                android:valueTo="100"></com.google.android.material.slider.Slider>
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age:"
+                android:textAlignment="center"
+                android:textColor="#8692f7"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8e3e3"
+            android:orientation="vertical">
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider_pregnant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="Pregnant"
+                android:stepSize="1.0"
+                android:value="1"
+                android:valueFrom="0"
+                android:valueTo="20"></com.google.android.material.slider.Slider>
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No of Times Pregnant:"
+                android:textAlignment="center"
+                android:textColor="#8692f7"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8e3e3"
+            android:orientation="vertical">
+
+            <com.google.android.material.slider.Slider
+
+                android:id="@+id/slider_glucose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="Glucose"
+                android:stepSize="1.0"
+                android:value="100"
+                android:valueFrom="0"
+                android:valueTo="300">
+
+            </com.google.android.material.slider.Slider>
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Glucose Level:"
+                android:textAlignment="center"
+                android:textColor="#8692f7"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8e3e3"
+            android:orientation="vertical">
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider_b_pressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="Blood Pressure"
+                android:stepSize="1.0"
+                android:value="80"
+                android:valueFrom="0"
+                android:valueTo="300">
+
+            </com.google.android.material.slider.Slider>
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diastolic Blood Pressure:"
+                android:textAlignment="center"
+                android:textColor="#8692f7"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8e3e3"
+            android:orientation="vertical">
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider_s_thickness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="Triceps Skin Fold Thickness (mm):"
+                android:stepSize="1.0"
+                android:value="20"
+                android:valueFrom="0"
+                android:valueTo="100">
+
+            </com.google.android.material.slider.Slider>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Triceps Skin Fold Thickness(mm):"
+                android:textAlignment="center"
+                android:textColor="#8692f7"
+                android:textSize="16dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8e3e3"
+            android:orientation="vertical">
+
+            <com.google.android.material.slider.Slider
+
+                android:id="@+id/slider_insulin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="Insulin"
+                android:stepSize="1.0"
+                android:value="80"
+                android:valueFrom="0"
+                android:valueTo="500">
+
+            </com.google.android.material.slider.Slider>
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2-Hour Serum Insulin (mu U/ml):"
+                android:textAlignment="center"
+                android:textColor="#8692f7"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8e3e3"
+            android:orientation="vertical">
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="Body mass index (weight in kg/(height in m)^2)"
+                android:stepSize="1.0"
+                android:value="25"
+                android:valueFrom="0"
+                android:valueTo="80"></com.google.android.material.slider.Slider>
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Body Mass Index (weight in kg/(height in m)^2)"
+                android:textAlignment="center"
+                android:textColor="#8692f7"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8e3e3"
+            android:orientation="vertical">
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider_function"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="Diabetes Pedigree Function"
+                android:stepSize="0.1"
+                android:value="0.2"
+                android:valueFrom="0"
+                android:valueTo="2.5">
+
+            </com.google.android.material.slider.Slider>
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diabetes Pedigree Function"
+                android:textAlignment="center"
+                android:textColor="#8692f7"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+
+        <Button
+
+            android:id="@+id/predict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="Predict"></Button>
+
+    </LinearLayout>
+</ScrollView>

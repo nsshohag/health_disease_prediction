@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Failure Prediction</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        /* CSS styles can be added here to mimic the appearance of your Android layout */
+        /* head style="text-align: center; color: #2a2a52; font-size: 16px; font-weight: bold;"  */
+
+
+
+        .glow-text {
+            font-size: 32px;
+            font-weight: bold;
+            color: #5053a4;
+/*            animation: glow-animation 1s infinite alternate;*/
+            text-align: center;
+            background-color: white;
+            margin-bottom: 80px;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+        }
+
+        @keyframes glow-animation {
+            0% {
+                text-shadow: 0 0 5px #fffF00, 0 0 5px #ff0000, 0 0 15px #ff6200, 0 0 20px #ff0000;
+            }
+
+            50% {
+                text-shadow: 0 0 10px #fffF00, 0 0 10px #ff0000, 0 0 30px #ff6200, 0 0 40px #ff0000;
+            }
+
+            100% {
+                text-shadow: 0 0 5px #fffF00, 0 0 5px #ff0000, 0 0 15px #ff6200, 0 0 20px #ff0000;
+            }
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <!--
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <a class="navbar-brand" href="#">Sadat</a>
+    </nav>
+
+    -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Health Disease Prediction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="app.html">Pneumonia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skin_diseases.html">Skin Disease</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heart_ecg.html">Heart ECG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mhr.html">Maternal Health Risk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="diabetes.html">Diabetes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heart_disease.html">Heart Disease</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heart_failure.html">Heart Failure</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Stroke</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div style="width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+        <h1 class="glow-text">Provide
+            Your Information To
+            Check Whether You Are in The Risk of Heart Failure</h1>
+
+            <div class="inp_range_container">
+                <label for="age">Age in Years</label>
+                <div class="range">
+                    <input style="width: 100%;" type="range" id="age" name="age" min="0" max="100" step="1" value="26"
+                    onmousemove="ageRangeSlider(this.value)">
+                </div>
+                <div class = "inp_value" id="age_show">
+                    age</div>
+                
+                </div>
+
+        <div class = "inp_radio_container">
+            <label for="gender">Gender</label>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+
+        <div class = "inp_radio_container">
+            <label for="gender">ChestPainType</label>
+            <input type="radio" id="ta" name="chest_pain" value="ta" checked>
+            <label for="ta">Typical Angina</label>
+            <input type="radio" id="ata" name="chest_pain" value="ata">
+            <label for="ata">Atypical Angina</label>
+            <input type="radio" id="nap" name="chest_pain" value="nap">
+            <label for="nap">Non-Anginal Pain</label>
+            <input type="radio" id="asy" name="chest_pain" value="asy">
+            <label for="asy">Asymptomatic</label>
+        </div>
+
+
+        <div class="inp_range_container">
+            <label for="bp">Resting BloodPressure</label>
+            <div class="range">
+                <input style="width: 100%;" type="range" id="bp" name="bp" min="0" max="300" step="1" value="120"
+                onmousemove="bpRangeSlider(this.value)">
+            </div>
+            <div class = "inp_value" id="bp_show">
+                bp</div>
+            
+            </div>
+
+        <div class="inp_range_container">
+            <label for="cholesterol">Cholesterol Level</label>
+            <div class="range">
+                <input style="width: 100%;" type="range" id="cholesterol" name="cholesterol" min="0" max="400" step="1" value="200"
+                onmousemove="cholesterolRangeSlider(this.value)">
+            </div>
+            <div class = "inp_value" id="cholesterol_show">
+                cholesterol</div>
+            
+            </div>
+
+        <div class = "inp_radio_container">
+            <label for="fastingbs">Fasting Blood Suger</label>
+            <input type="radio" id="fs1" name="fastingbs" value="fs1" checked>
+            <label for="fs1">Greater than 120</label>
+            <input type="radio" id="fs0" name="fastingbs" value="fs0">
+            <label for="fs0">Otherwise</label>
+        </div>
+
+        <div class = "inp_radio_container">
+            <label for="gender">Resting ECG</label>
+            <input type="radio" id="normal" name="ecg" value="normal" checked>
+            <label for="normal">Normal</label>
+            <input type="radio" id="lvh" name="ecg" value="lvh">
+            <label for="lvh">LVH(Left Ventricular Hypertrophy)</label>
+            <input type="radio" id="st" name="ecg" value="st">
+            <label for="st">ST(T- Wave Abnormality)</label>
+        </div>
+
+
+        <div class="inp_range_container">
+            <label for="maxhr">Max Heart Rate</label>
+            <div class="range">
+                <input style="width: 100%;" type="range" id="maxhr" name="maxhr" min="0" max="300" step="1" value="200"
+                onmousemove="maxhrRangeSlider(this.value)">
+            </div>
+            <div class = "inp_value" id="maxhr_show">
+                maxhr</div>
+            
+            </div>
+
+
+        <div class="inp_radio_container">
+            <label for="exercise_angina">Excersize Induced Angina</label>
+            <input type="radio" id="exercise_angina_no" name="exercise_angina" value="no" checked>
+            <label for="exercise_angina_no">No</label>
+            <input type="radio" id="exercise_angina_yes" name="exercise_angina" value="yes">
+            <label for="exercise_angina_yes">Yes</label>
+        </div>
+
+
+        <!-- Similar div elements for other input fields -->
+
+        <div class="btn_container">
+            <div onclick="predict()" id="predict">Predict</div>
+        </div>
+
+        <p id="result" style="text-align: center; font-size: 30px;"></p>
+    
+    
+    
+    </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle"> <!-- ekhane modal titile daw --> </h5> 
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+
+                    <div>
+
+                        <div id ="result_warning" style=" font-family: cursive; width: 100%;justify-content: center;align-items: center;display: flex; color: green;font-weight: bold; size: 300px;">
+                            Hey there! You're not at risk.
+                        </div>
+
+                        <div id="sadaaa">
+                            <!-- lottie animation is loaded here -->
+                        </div>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button id="close_button_modal" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">OK</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+</body>
+
+<script src="./heart_failure.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+</html>

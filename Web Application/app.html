@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pneumonia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dropzone.min.css">
+    <link rel="stylesheet" href="./app.css">
+    
+</head>
+
+
+<body>
+    
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Health Disease Prediction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="app.html">Pneumonia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skin_diseases.html">Skin Disease</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heart_ecg.html">Heart ECG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mhr.html">Maternal Health Risk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="diabetes.html">Diabetes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heart_disease.html">Heart Disease</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heart_failure.html">Heart Failure</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Stroke</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- <div class = "nav_bar">
+		<div class = "nav_left">
+			<h3><a href="index.html"style="text-decoration: none; color: inherit;">Health Disease Prediction</a></h3>
+		</div>
+		<div class = "nav_right">
+			<div class="nav_btn">
+				<a href="app.html" style="text-decoration: none; color: inherit;">Pneumonia</a>
+			</div>
+			<div class="nav_btn">
+				<a href="skin_diseases.html" style="text-decoration: none; color: inherit;">Skin Disease</a>
+			</div>
+			<div class="nav_btn">
+				<a href="heart_disease_ecg.html" style="text-decoration: none; color: inherit;">Heart ECG</a>
+			</div>
+			<div class="nav_btn">
+				<a href="mhr.html" style="text-decoration: none; color: inherit;">Maternal Health Risk</a>
+			</div>
+			<div class="nav_btn">
+				<a href="diabetes.html" style="text-decoration: none; color: inherit;">Diabetes</a>
+			</div>
+			<div class="nav_btn">
+				<a href="heart_disease.html" style="text-decoration: none; color: inherit;">Heart Disease</a>
+			</div>
+			<div class="nav_btn">
+				<a href="heart_failure.html" style="text-decoration: none; color: inherit;">Heart Failure</a>
+			</div>
+			<div class="nav_btn">
+				Stroke
+			</div>
+
+		</div>
+
+	</div> -->
+
+
+    <br></br>
+    <br></br>
+    <div style="text-align: center; font-size: xx-large;color: green;">Pneumonia Prediction</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col card-wrapper" data-player="NORMAL">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="normal.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Normal</h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="PNEUMONIA">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="pneumonia.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Pneumonia</h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle"> <!-- ekhane modal titile daw --> </h5> 
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+
+                    <div>
+
+                        <div id ="result_warning" style=" font-family: cursive; width: 100%;justify-content: center;align-items: center;display: flex; color: green;font-weight: bold; size: 300px;">
+                            Hey there! You're not at risk.
+                        </div>
+
+                        <div id="sadaaa">
+                            <!-- lottie animation is loaded here -->
+                        </div>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button id="close_button_modal" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">OK</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-sm-4">
+
+                <!-- <div style="color: green;">
+
+                    Please Provide you x-ray of chest get prediction
+                </div> -->
+
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <form action="/file-upload" class="dropzone" id="dropzone">
+                            <div class="dz-message needsclick">
+                                <img src="upload.png" width="50vw" height="50vw"><br>
+                                <span class="note needsclick">Drop x-ray of chest here or click to upload</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-3 mx-auto">
+                        <button id="submitBtn" type="button" class="btn btn-success">Predict</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-8 error" id="error">
+                <p>Can't classify image.</p>
+            </div>
+
+            <div class="col-sm-4" id="resultHolder">
+            </div>
+            <div class="col-sm-4" id="divClassTable">
+                <table id="classTable">
+                    <tr>
+                        <th>Condition</th>
+                        <th>Probability Score</th>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td id="score_kristen"></td>
+                    </tr>
+                    <tr>
+                        <td>Pneumonia</td>
+                        <td id="score_maria"></td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="./dropzone.min.js"></script>
+<script src="./app.js"></script>
+</html>

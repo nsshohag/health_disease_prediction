@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type = "text/css"  href="/nav.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Health Disease Prediction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="app.html">Pneumonia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skin_diseases.html">Skin Disease</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heart_ecg.html">Heart ECG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mhr.html">Maternal Health Risk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="diabetes.html">Diabetes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heart_disease.html">Heart Disease</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heart_failure.html">Heart Failure</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Stroke</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	
+	<div class="landing_top">
+		<div class="landing_left">
+			<h1>Health Disease Prediction</h1>
+			<p>
+
+				Welcome to the future of healthcare at your fingertips! Our cutting-edge health disease prediction system harnesses the power of machine learning to revolutionize preventive care. At our platform, we empower individuals to take charge of their health by providing accurate predictions of potential diseases based on personalized data analysis.
+
+			</p>
+			<img src="./pyramid.svg">
+		</div>
+		<div class="landing_right">
+			<img src="./landing.svg">
+		</div>
+		<a class="scroll_btn" href="#cards_container">
+			<svg class="arrows">
+				<path class="a1" d="M0 0 L30 32 L60 0"></path>
+				<path class="a2" d="M0 20 L30 52 L60 20"></path>
+				<path class="a3" d="M0 40 L30 72 L60 40"></path>
+			</svg>
+		</div>
+	</div>
+
+	
+	<div class="container" id = "cards_container">
+		
+		<div class="card">
+			<div class="card-header">
+				<img src = "images/green_heart.svg">
+				<div>Pneumonia</div>
+			</div>
+<!-- 			<div class="card-body">
+				<p>Manage student information</p>
+			</div> -->
+			<div class="card-footer">
+				<a href="app.html" class="btn">Predict Now</a>
+				<!-- <a href="AddStudent" class="btn">Add Student</a> -->
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header">
+				<img src = "images/red_heart.svg">
+				<div>Heart Disease (ECG)</div>
+			</div>
+<!-- 			<div class="card-body">
+				<p>Manage teacher information</p>
+			</div> -->
+			<div class="card-footer">
+				<a href="heart_ecg.html" class="btn">Predict Now</a>
+				<!-- <a href="AddTeacher" class="btn">Add Teacher</a> -->
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header">
+				<img src = "images/purple_heart.svg">
+				<div>Skin Disease</div>
+			</div>
+	<!-- 		<div class="card-body">
+				<p>Manage course information</p>
+			</div> -->
+			<div class="card-footer">
+				<a href="skin_diseases.html" class="btn">Predict Now</a>
+				<!-- <a href="add-course" class="btn">Add Course</a> -->
+				<!--  a href="assignCourse.jsp" class="btn">Assign Course</a -->
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<img src = "images/blue_heart.svg">
+				<div>Maternal Health Risk</div>
+			</div>
+	<!-- 		<div class="card-body">
+				<p>Manage course information</p>
+			</div> -->
+			<div class="card-footer">
+				<a href="mhr.html" class="btn">Predict Now</a>
+				<!-- <a href="add-course" class="btn">Add Course</a> -->
+				<!--  a href="assignCourse.jsp" class="btn">Assign Course</a -->
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<img src = "images/green_heart.svg">
+				<div>Diabetes</div>
+			</div>
+<!-- 			<div class="card-body">
+				<p>Manage student information</p>
+			</div> -->
+			<div class="card-footer">
+				<a href="diabetes.html" class="btn">Predict Now</a>
+				<!-- <a href="AddStudent" class="btn">Add Student</a> -->
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header">
+				<img src = "images/red_heart.svg">
+				<div>Heart Disease</div>
+			</div>
+<!-- 			<div class="card-body">
+				<p>Manage teacher information</p>
+			</div> -->
+			<div class="card-footer">
+				<a href="heart_disease.html" class="btn">Predict Now</a>
+				<!-- <a href="AddTeacher" class="btn">Add Teacher</a> -->
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header">
+				<img src = "images/purple_heart.svg">
+				<div>Heart Failure</div>
+			</div>
+	<!-- 		<div class="card-body">
+				<p>Manage course information</p>
+			</div> -->
+			<div class="card-footer">
+				<a href="heart_failure.html" class="btn">Predict Now</a>
+				<!-- <a href="add-course" class="btn">Add Course</a> -->
+				<!--  a href="assignCourse.jsp" class="btn">Assign Course</a -->
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<img src = "images/blue_heart.svg">
+				<div>Stroke</div>
+			</div>
+	<!-- 		<div class="card-body">
+				<p>Manage course information</p>
+			</div> -->
+			<div class="card-footer">
+				<a href="#" class="btn">Predict Now</a>
+				<!-- <a href="add-course" class="btn">Add Course</a> -->
+				<!--  a href="assignCourse.jsp" class="btn">Assign Course</a -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_acne"
+    tools:context=".Acne">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ব্রণ এবং রোজাসিয়া কি ?"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="রোজাসিয়া বা অ্যাকনে রোজাসিয়া এক ধরনের ত্বকের রোগ যা সাধারণত ত্বকের চামড়াকে প্রভাবিত করে। মুখকে স্থায়ীভাবে লাল করার জন্য ক্যাপিলারিগুলি (সূক্ষ্ম নল) বড় হয়। অনুরূপভাবে, কপাল, গাল এবং থুতনিতে ব্রণর মতো হলুদ রঙের পিম্পেল বা ফুস্কুড়ি দেখা যায়। অনেক সময় একে ব্রণর সাথে গুলিয়ে ফেলা হতে পারে; যদিও, এটা উল্লেখ করা জরুরী যে ব্রণর মতো রোজাসিয়ার জন্য মুখে কোনও দাগ হয় না। সাধারণত 30-50 বছর বয়সী মহিলাদের মধ্যে এই অবস্থাটি হয়ে থাকে, যার কারণে মুখ লাল হয়ে যায়। অবস্থার অগ্রগতির সঙ্গে সঙ্গে মুখের লালভাব বৃদ্ধি পেতে থাকে যেহেতু ক্যাপিলারিগুলি বড় হয়। পুরুষদের ক্ষেত্রে, এর ফলে নাকও লাল হয়ে যায়।"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ব্রণ সাথে যুক্ত প্রধান লক্ষণ এবং উপসর্গগুলি কি কি?"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" মুখ লাল হয়ে যাওয়া দেখেই সাধারণত এই রোগের নির্ণয় করা হয়। কোনও কোনও ক্ষেত্রে, চোখও প্রভাবিত হয় এবং রক্তরাঙা ও বালি বালি হয়ে যায়। অন্যান্য উপসর্গগুলির মধ্যে রয়েছে: কপাল, গাল এবং থুতনি লাল হয়ে যাওয়া। ফ্লাশিং। হঠাৎ পুঁজ ভর্তি ফুস্কুড়ি হওয়া। ফর্সা মহিলাদের ক্ষেত্রে রক্ত ধমনীগুলি দৃশ্যমান হওয়া। খড়খড়ে এবং ত্বকের রঙ অসম হওয়া। রাইনোফাইমা বা নাকের চামড়া মোটা হয়ে যাওয়া। মুখ জ্বালা করা। মুখে দাগ হওয়া।"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="এর প্রধান কারণগুলি কি কি?"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="এই রোগটি সাধারণত মুখের উপরে হয় যা মাইটের ফলে হতে পারে। এই রোগ হওয়ার অন্যান্য সাম্ভাব্য কারণগুলি হল: রক্ত ধমনীর অস্বাভাবিকতা। ক্যাফিনযুক্ত পানীয় বা গরম পানীয় যেমন কফি বা স্যুপ। ইউভি রে এক্সপোজার। মানসিক চাপ। রেড ওয়াইন বা অন্যান্য মদ। অতিরিক্ত গরম। অতিরিক্ত পরিশ্রম। ওষুধ।"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="এটি কিভাবে নির্ণয় এবং চিকিৎসা করা হয়? "
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="শারীরিক পরীক্ষা এবং সম্পূর্ণ মেডিকেল ইতিহাস নেওয়ার মাধ্যমে রোজাসিয়ার নির্ণয় করা হয়। রক্ত পরীক্ষার মাধ্যমে লুপাস এরিথেমাটোসাসের মতো একই লক্ষণযুক্ত রোগের থেকে রোজাসিয়াকে আলাদা করে চিহ্নিত করা হয়। তাই, চিকিৎসকের কাছে গেলে এই রোগের অন্তর্নিহিত কারণ চিহ্নিত করা আরও সহজ হতে পারে। তবে, সাধারণ মানুষ ব্রণ, সেবোরিক ডার্মাটাইটিস এবং পেরিওরাল ডার্মাটাইটিসের উপসর্গগুলির সঙ্গে এই রোগের উপসর্গগুলিকে গুলিয়ে ফেলতে পারে। এই রোগের চিকিৎসাগুলির মধ্যে রয়েছে: অন্তর্নিহিত কারণগুলি এড়িয়ে চলা। নিয়মিত মুখ পরিষ্কার করা। সান্সক্রিন লোশনের ব্যবহার। ফোটোথেরাপি। ডক্সিসাইক্লিন এবং মাইনোসাইক্লিনের মতো অ্যান্টিবায়োটিক। ক্রিম এবং লোশনের মাধ্যমে টপিক্যাল চিকিৎসা। ডায়াথার্মি। লেজার চিকিৎসা। আইসোট্রেটিনয়েনের প্রয়োগ। সার্জারি বা অস্ত্রোপচার।"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

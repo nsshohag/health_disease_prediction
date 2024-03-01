@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* CSS styles can be added here to mimic the appearance of your Android layout */
+        /* head style="text-align: center; color: #2a2a52; font-size: 16px; font-weight: bold;"  */
+
+
+
+        .glow-text {
+            font-size: 32px;
+            font-weight: bold;
+            color: #5053a4;
+/*            animation: glow-animation 1s infinite alternate;*/
+            text-align: center;
+            background-color: white;
+            margin-bottom: 80px;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+        }
+
+        @keyframes glow-animation {
+            0% {
+                text-shadow: 0 0 5px #fffF00, 0 0 5px #ff0000, 0 0 15px #ff6200, 0 0 20px #ff0000;
+            }
+
+            50% {
+                text-shadow: 0 0 10px #fffF00, 0 0 10px #ff0000, 0 0 30px #ff6200, 0 0 40px #ff0000;
+            }
+
+            100% {
+                text-shadow: 0 0 5px #fffF00, 0 0 5px #ff0000, 0 0 15px #ff6200, 0 0 20px #ff0000;
+            }
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <!--
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <a class="navbar-brand" href="#">Sadat</a>
+    </nav>
+
+    -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Health Disease Prediction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="app.html">Pneumonia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skin_diseases.html">Skin Disease</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heart_ecg.html">Heart ECG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mhr.html">Maternal Health Risk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="diabetes.html">Diabetes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heart_disease.html">Heart Disease</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="heart_failure.html">Heart Failure</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Stroke</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div style="width: 100%; height: 100%; padding: 20px; box-sizing: border-box;">
+        <h1 class="glow-text">Provide
+            Your Information To
+            Check Whether You Are in The Risk of Diabetes</h1>
+
+            <div class="inp_range_container">
+            <label for="age">Age in Years</label>
+            <div class="range">
+                <input style="width: 100%;" type="range" id="age" name="age" min="0" max="100" step="1" value="20"
+                onmousemove="ageRangeSlider(this.value)">
+            </div>
+            <div class = "inp_value" id="age_show">
+                age</div>
+            
+            </div>
+            
+
+        <div class="inp_range_container">
+            <label for="preg">No of Times Pregnant</label>
+            <div class="range">
+                <input type="range" id="preg" name="preg" min="0" max="20" step="1" value="0"
+                onmousemove="pregRangeSlider(this.value)">
+            </div>
+            <div class = "inp_value" id="preg_show">
+                preg</div>
+
+        </div>
+
+
+        <div class="inp_range_container">
+            <label for="glucose">Glucose Level</label>
+            <div class="range">
+                <input type="range" id="glucose" name="glucose" min="0" max="300" step="1" value="100"
+                onmousemove="glucoseRangeSlider(this.value)">
+            </div>
+            <div class = "inp_value" id="glucose_show">
+                glucose</div>
+
+        </div>
+
+        
+        <div class="inp_range_container">
+            <label for="dia_pressure">Diastolic Blood Pressure</label>
+            <div class="range">
+                <input type="range" id="dia_pressure" name="dia_pressure" min="0" max="200" step="1" value="70"
+                onmousemove="dia_pressureRangeSlider(this.value)">
+            </div>
+            <div class = "inp_value" id="dia_p_show">
+                dia_p_show</div>
+
+        </div>
+
+        
+        <div class="inp_range_container">
+            <label for="age">Skin Fold Thickness</label>
+            <div class="range">
+                <input style="width: 100%;" type="range" id="tr" name="tr" min="0" max="100" step="1" value="30"
+                onmousemove="trRangeSlider(this.value)">
+            </div>
+            <div class = "inp_value" id="tr_show">
+                tr</div>
+            
+            </div>
+
+
+            <div class="inp_range_container">
+                <label for="age">Insulin</label>
+                <div class="range">
+                    <input style="width: 100%;" type="range" id="insulin" name="insulin" min="0" max="200" step="1" value="0"
+                    onmousemove="insulinRangeSlider(this.value)">
+                </div>
+                <div class = "inp_value" id="insulin_show">
+                    insulin</div>
+                
+                </div>
+                <div class="inp_range_container">
+                    <label for="age">Body Mass Index (BMI)</label>
+                    <div class="range">
+                        <input style="width: 100%;" type="range" id="bmi" name="bmi" min="0" max="70" step="1" value="24"
+                        onmousemove="bmiRangeSlider(this.value)">
+                    </div>
+                    <div class = "inp_value" id="bmi_show">
+                        bmi</div>
+                    
+                    </div>
+
+                    <div class="inp_range_container">
+                        <label for="age">Diabetes Predigree Func</label>
+                        <div class="range">
+                            <input style="width: 100%;" type="range" id="dpf" name="dpf" min="0" max="2.7" step="0.1" value="0.3"
+                            onmousemove="dpfRangeSlider(this.value)">
+                        </div>
+                        <div class = "inp_value" id="dpf_show">
+                            dpf</div>
+                        
+                        </div>
+                                   
+
+        <!-- Similar div elements for other input fields -->
+
+        <div class="btn_container">
+            <div onclick="predict()" id="predict">Predict</div>
+        </div>
+
+        <p id="result" style="text-align: center; font-size: 30px;"></p>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"> <!-- ekhane modal titile daw --> </h5> 
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+
+            <div>
+
+                <div id ="result_warning" style=" font-family: cursive; width: 100%;justify-content: center;align-items: center;display: flex; color: green;font-weight: bold; size: 300px;">
+                    ???
+                </div>
+
+                <div id="sadaaa">
+                    <!-- lottie animation is loaded here -->
+                </div>
+            </div>
+
+
+            <div class="modal-footer">
+                <button id="close_button_modal" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">OK</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+
+<script src="./diabetes.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+</html>
+
+
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthCare"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".API"
+            android:exported="false" />
+        <activity
+            android:name=".Melanoma"
+            android:exported="false" />
+        <activity
+            android:name=".Eczema"
+            android:exported="false" />
+        <activity
+            android:name=".Heart_Failure"
+            android:exported="false" />
+        <activity
+            android:name=".Acne"
+            android:exported="false" />
+        <activity
+            android:name=".Diabetes"
+            android:exported="false" />
+        <activity
+            android:name=".Search_Google"
+            android:exported="false" />
+        <activity
+            android:name=".Disease_Description"
+            android:exported="false" />
+        <activity
+            android:name=".Temp"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Heart_Disease"
+            android:exported="false" />
+        <activity
+            android:name=".Pneumonia"
+            android:exported="false" />
+        <activity
+            android:name=".SkinDisease"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
