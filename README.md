@@ -72,7 +72,7 @@
 
 ### Skin Disease Prediction Page :
 
-![Skin Disease]https://github.com/nsshohag/health_disease_prediction/blob/main/acne.jpg)
+![Skin Disease](https://github.com/nsshohag/health_disease_prediction/blob/main/acne.jpg)
 
 
 ### Diabetes :
